@@ -1,5 +1,6 @@
 // src/components/Header.js
 import React, { useState } from "react";
+import logo from "../assets/nba-logo.png";
 
 const Header = ({ setSearchTerm }) => {
   const [inputValue, setInputValue] = useState("");
@@ -16,6 +17,7 @@ const Header = ({ setSearchTerm }) => {
 
   return (
     <header>
+     <img src={logo} alt="NBA Logo" />
       <h1>NBA Legends</h1>
       <div className="search-container">
         <input
