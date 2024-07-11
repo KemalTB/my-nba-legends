@@ -10,15 +10,16 @@ const Header = ({ setSearchTerm }) => {
   const [inputValue, setInputValue] = useState("");
   // inputValue adında bir state değişkeni ve setInputValue adında bu değişkeni güncelleyen bir fonksiyon tanımlanır. Başlangıç değeri boş bir stringdir. Bu değişken, arama girişinin değerini tutar.
 
-  const handleSearch = (osman) => {
-    setInputValue(osman.target.value);
-    setSearchTerm(osman.target.value);
+  const handleSearch = (event) => {
+    const searchTerm = event.target.value;
+    setInputValue(searchTerm);
+    setSearchTerm(searchTerm);
   };
   // handleSearch fonksiyonu, arama girişindeki değişiklikleri yönetir.
   // osman adında bir olay nesnesi (event object) alır.
   // setInputValue fonksiyonu ile arama girişinin değerini günceller.
-  // setSearchTerm fonksiyonu ile üst bileşene arama terimini iletir. (Burada fonksiyonun parametre ismi osman olarak verilmiş, genellikle event veya e kullanılır.)
-
+  // setSearchTerm fonksiyonu ile üst bileşene arama terimini iletir. 
+  
   const handleClear = () => {
     setInputValue("");
     setSearchTerm("");
