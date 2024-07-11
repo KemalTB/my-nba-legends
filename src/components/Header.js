@@ -5,9 +5,9 @@ import logo from "../assets/nba-logo.png";
 const Header = ({ setSearchTerm }) => {
   const [inputValue, setInputValue] = useState("");
 
-  const handleSearch = (e) => {
-    setInputValue(e.target.value);
-    setSearchTerm(e.target.value);
+  const handleSearch = (osman) => {
+    setInputValue(osman.target.value);
+    setSearchTerm(osman.target.value);
   };
 
   const handleClear = () => {

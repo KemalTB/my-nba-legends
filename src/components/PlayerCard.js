@@ -20,7 +20,7 @@ const PlayerCard = ({ player }) => {
       </div>
     ));
   } else {
-    // Eğer string bir veri ise, split kullanarak işlem yapabiliriz
+    
     statisticsList = player.statistics.split(', ').map((stat, index) => (
       <div key={index} className="stat-item">
         <img src={basketballIcon} alt="Basketball Icon" className="icon" />
