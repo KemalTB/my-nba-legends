@@ -1,0 +1,117 @@
+/* src/App.css */
+.App {
+  text-align: center;
+  background-color: rgb(244,211,103);
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+}
+
+header img {
+  width: 200px;
+}
+
+h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.search-container {
+  position: relative;
+}
+
+input[type="text"] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 300px;
+  font-size: 16px;
+  outline: none;
+}
+
+input[type="text"]:focus {
+  border-color: #007bff;
+}
+
+.clear-button {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+.clear-button:hover {
+  background-color: #0056b3;
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  background-image: url('https://preview.redd.it/fyw6gxbot40d1.jpeg?auto=webp&s=7d612a52a213dc0cc9f03f51563f17d1c6034e8a');
+  background-repeat: repeat;
+  padding: 20px;
+  border-radius: 8px;
+  background-size: 500px 500px; /* Resmin boyutunu ayarlamak için */
+}
+
+.player-card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 10px;
+  width: 200px;
+  cursor: pointer;
+  text-align: center;
+  transition: transform 0.3s;
+  background-color: white;
+}
+
+.player-card:hover {
+  /* transform: scale(1.05); */
+}
+
+.player-img {
+  width: 100%;
+  height: 80%;
+  border-radius: 8px;
+  transition: transform 0.3s;
+}
+
+.player-img:hover {
+  transform: scale(1.1);
+}
+
+h2 {
+  font-size: 15px;
+  margin-bottom: 5px;
+}
+
+.player-stats {
+  font-size: 14px;
+  margin: 10px 0;
+  margin-top: 80px;
+  margin-bottom: 110px;
+}
+.stat-item {
+  display: flex;
+  align-items: center;
+  margin: 5px 0;
+  margin-top: 10px;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
