@@ -60,7 +60,7 @@ input[type="text"]:focus {
 }
 
 .card-container {
-  height: 700px;
+  height: 95%;
   width: 90%;
   margin-left: 3%;
   display: flex;
@@ -71,7 +71,7 @@ input[type="text"]:focus {
   background-repeat: repeat;
   padding: 20px;
   border-radius: 8px;
-  background-size: 300px 500px; /* Resmin boyutunu ayarlamak için */
+  background-size: 300px 800px; /* Resmin boyutunu ayarlamak için */
 }
 
 .player-card {
