@@ -61,6 +61,7 @@ input[type="text"]:focus {
 
 .card-container {
   height: 95%;
+  min-height: 100vh;
   width: 90%;
   margin-left: 3%;
   display: flex;
