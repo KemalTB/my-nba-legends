@@ -77,7 +77,7 @@ input[type="text"]:focus {
 .player-card {
   border: 1px solid #ccc;
   border-radius: 8px;
-  padding: 2px;
+  /* padding: 2px; */
   width: 200px;
   cursor: pointer;
   text-align: center;
